@@ -165,6 +165,93 @@ body.nav-active {
 /* * REUSED STYLE */
 
 /* * PRELOAD */
+.preload {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--gold-crayola);
+  display: grid;
+  place-content: center;
+  place-items: center;
+  transition: var(--transition-2);
+  -webkit-transition: var(--transition-2);
+  -moz-transition: var(--transition-2);
+  -ms-transition: var(--transition-2);
+  -o-transition: var(--transition-2);
+}
+.preload > * {
+  transition: var(--transition-1);
+  -webkit-transition: var(--transition-1);
+  -moz-transition: var(--transition-1);
+  -ms-transition: var(--transition-1);
+  -o-transition: var(--transition-1);
+}
+.preload.loaded > * {
+  opacity: 0;
+}
+.preload.loaded {
+  transition-delay: 250ms;
+  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+}
+.circle {
+  width: 72px;
+  height: 72px;
+  margin-block-end: 32px;
+  animation: rotate360 1s linear infinite;
+  border: 3px solid var(--white);
+  border-block-start-color: var(--smoky-black-3);
+  border-radius: var(--radius-circle);
+  -webkit-border-radius: var(--radius-circle);
+  -moz-border-radius: var(--radius-circle);
+  -ms-border-radius: var(--radius-circle);
+  -o-border-radius: var(--radius-circle);
+  -webkit-animation: rotate360 1.5s linear infinite;
+}
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+  }
+}
+.preload .text {
+  background-image: var(--loading-text-gradient);
+  background-size: 500%;
+  font-size: calc(2rem + 3vw);
+  font-weight: var(--weight-bold);
+  line-height: 1em;
+  letter-spacing: 12px;
+  padding-inline-start: 12px;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 1px var(--eerie-black-3);
+  animation: loadingText 2s infinite;
+  -webkit-animation: loadingText 2s linear infinite;
+}
+@keyframes loadingText {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0;
+  }
+}
 
 /* * TOPBAR */
 
