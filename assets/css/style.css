@@ -176,6 +176,7 @@ body.nav-active {
   place-content: center;
   place-items: center;
   transition: var(--transition-2);
+  transition-delay: 250ms;
   -webkit-transition: var(--transition-2);
   -moz-transition: var(--transition-2);
   -ms-transition: var(--transition-2);
@@ -192,7 +193,6 @@ body.nav-active {
   opacity: 0;
 }
 .preload.loaded {
-  transition-delay: 250ms;
   transform: translateY(100%);
   -webkit-transform: translateY(100%);
   -moz-transform: translateY(100%);
