@@ -98,3 +98,26 @@ addEventOnElements(
 );
 
 window.addEventListener("load", autoSlide);
+
+// ? Parallax Effect
+const parallaxItems = document.querySelectorAll("[data-parallax-item]");
+
+let x, y;
+
+window.addEventListener("mousemove", function (event) {
+  console.log("Y",event.clientX);
+  console.log(event.clientY);
+  x = (event.clientX / window.innerWidth) * 10 - 5;
+  y = (event.clientY / window.innerWidth) * 10 - 5;
+
+  // reverse the number eg. 20 -> -20, -5 -> 5
+  x = x * -1;
+  y = y * -1;
+
+  for (const item of parallaxItems) {
+    x = x * Number(item.dataset.parallaxSpeed);
+    y = y * Number(item.dataset.parallaxSpeed);
+
+    item.style.transform = `translate3d(${x}px, ${y}px, 0px)`;
+  }
+});
