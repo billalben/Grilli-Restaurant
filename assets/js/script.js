@@ -26,8 +26,10 @@ const toggleNavbar = function () {
 
 addEventOnElements(navTogglers, "click", toggleNavbar);
 
-// ?=== Header
+// ?=== Header & back btn top
 const header = document.querySelector("[data-header]");
+const backTopBtn = document.querySelector("[data-back-top-btn]");
+
 let lastScrollPos = 0;
 
 const hideHeader = function () {
@@ -40,8 +42,12 @@ const hideHeader = function () {
 window.addEventListener("scroll", function () {
   if (window.scrollY >= 60) {
     header.classList.add("active");
+    backTopBtn.classList.add("active");
     hideHeader();
-  } else header.classList.remove("active");
+  } else {
+    header.classList.remove("active");
+    backTopBtn.classList.remove("active");
+  }
 });
 
 // ? === Hero Slider

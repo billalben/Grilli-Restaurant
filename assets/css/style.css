@@ -1524,5 +1524,39 @@ textarea.input-field {
 }
 
 /* * BACK TO TOP */
+.back-top-btn {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 4;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--gold-crayola);
+  color: var(--smoky-black-1);
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  transition: var(--transition-1);
+  box-shadow: var(--shadow-1);
+  border-radius: var(--radius-circle);
+  -webkit-border-radius: var(--radius-circle);
+  -moz-border-radius: var(--radius-circle);
+  -ms-border-radius: var(--radius-circle);
+  -o-border-radius: var(--radius-circle);
+  -webkit-transition: var(--transition-1);
+  -moz-transition: var(--transition-1);
+  -ms-transition: var(--transition-1);
+  -o-transition: var(--transition-1);
+}
+.back-top-btn:is(:hover, :focus-visible) {
+  color: var(--gold-crayola);
+  background-color: var(--white);
+}
+.back-top-btn.active {
+  opacity: 1;
+  visibility: visible;
+}
 
 /* * MEDIA QUERIES */
