@@ -37,9 +37,9 @@
           <div class="icon">
             <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
           </div>
-          <span class="span"
-            >Restaurant St, Delicious City, London 9578, UK</span
-          >
+          <span class="span">
+            Restaurant St, Delicious City, London 9578, UK
+          </span>
         </address>
         <div class="separator"></div>
         <div class="topbar-item item-2">
@@ -89,31 +89,47 @@
           </a>
           <ul class="navbar-list">
             <li class="navbar-item">
-              <a href="#home" class="navbar-link hover-underline active">
+              <a
+                href="#home"
+                class="navbar-link hover-underline active"
+                data-nav-link
+              >
                 <div class="separator"></div>
                 <span class="span">Home</span>
               </a>
             </li>
             <li class="navbar-item">
-              <a href="#menu" class="navbar-link hover-underline">
+              <a href="#menu" class="navbar-link hover-underline" data-nav-link>
                 <div class="separator"></div>
                 <span class="span">Menus</span>
               </a>
             </li>
             <li class="navbar-item">
-              <a href="#about" class="navbar-link hover-underline">
+              <a
+                href="#about"
+                class="navbar-link hover-underline"
+                data-nav-link
+              >
                 <div class="separator"></div>
                 <span class="span">About Us</span>
               </a>
             </li>
             <li class="navbar-item">
-              <a href="#" class="navbar-link hover-underline">
+              <a
+                href="#features"
+                class="navbar-link hover-underline"
+                data-nav-link
+              >
                 <div class="separator"></div>
-                <span class="span">Our Chefs</span>
+                <span class="span">Our Features</span>
               </a>
             </li>
             <li class="navbar-item">
-              <a href="#" class="navbar-link hover-underline">
+              <a
+                href="#contact"
+                class="navbar-link hover-underline"
+                data-nav-link
+              >
                 <div class="separator"></div>
                 <span class="span">Contact</span>
               </a>
@@ -380,7 +396,11 @@
         </section>
 
         <!-- * About -->
-        <section class="section about text-center" aria-label="service">
+        <section
+          id="about"
+          class="section about text-center"
+          aria-label="service"
+        >
           <div class="container">
             <div class="about-content">
               <p class="label-2 section-subtitle" id="about-label">Our Story</p>
@@ -756,7 +776,7 @@
         </section>
 
         <!-- * Reservation -->
-        <section class="reservation">
+        <section id="contact" class="reservation">
           <div class="container">
             <div class="form reservation-form bg-black-10">
               <form action="" class="form-left">
@@ -882,7 +902,11 @@
         </section>
 
         <!-- * Features -->
-        <section class="section features text-center" aria-label="features">
+        <section
+          id="features"
+          class="section features text-center"
+          aria-label="features"
+        >
           <div class="container">
             <p class="section-subtitle label-2">Why Choose Us</p>
             <h2 class="section-title headline-1">Our Strength</h2>
