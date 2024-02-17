@@ -4,7 +4,7 @@
 
 This project is a responsive website, meticulously crafted using HTML, CSS, and JavaScript. It's designed with a mobile-first approach, ensuring optimal performance and aesthetics across all devices. The website features a range of interactive elements that enhance user engagement and provide a dynamic user experience.
 
-<a href="https://billalben.github.io/Grilli-Restaurant/"><strong>➥ Live Demo</strong></a>
+<a href="https://billalben.github.io/grilli-restaurant/"><strong>➥ Live Demo</strong></a>
 
 <!-- ### Demo Screenshots
 ![Grilli Restaurant]() -->
