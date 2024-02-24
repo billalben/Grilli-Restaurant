@@ -745,7 +745,7 @@ body.nav-active {
   -ms-border-radius: var(--radius-circle);
   -o-border-radius: var(--radius-circle);
 }
-.nav-open-btn .close-btn ion-icon {
+.navbar .close-btn ion-icon {
   --ionicon-stroke-width: 40px;
 }
 .navbar .close-btn:is(:hover, :focus-visible) {
@@ -1521,6 +1521,9 @@ textarea.input-field {
   display: inline;
   color: var(--gold-crayola);
   text-decoration: underline;
+}
+.current-yr-cp {
+  display: inline-block;
 }
 
 /* * BACK TO TOP */

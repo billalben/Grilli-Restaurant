@@ -133,3 +133,6 @@ window.addEventListener("mousemove", function (event) {
     item.style.transform = `translate3d(${x}px, ${y}px, 0px)`;
   });
 });
+
+// dynamic year copyright
+document.querySelector(".current-yr-cp").textContent = new Date().getFullYear();
